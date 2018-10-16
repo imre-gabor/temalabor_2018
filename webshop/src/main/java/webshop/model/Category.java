@@ -1,7 +1,7 @@
 package webshop.model;
 
 import java.util.Set;
-
+//git test
 import lombok.Getter;
 import lombok.Setter;
 
