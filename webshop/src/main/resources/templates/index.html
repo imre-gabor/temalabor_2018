@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Webshop</title>
+</head>
+<body>
+	<h1>Welcome to our webshop!</h1>
+	We have <span th:text="${categoryCount}">10</span> categories.
+	<form method="post" action="" th:action="@{/category}" th:object="${category}">
+		Name: <input th:field="*{name}"/>
+		<input type="submit" value="Save"/>
+	</form>
+</body>
+</html>
