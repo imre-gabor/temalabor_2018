@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Categories</title>
+</head>
+<body>
+
+	<form action="category" method="post" th:action="@{/category}" th:object="${category}">
+		Name: <input name="category" th:field="*{name}"/><br/>
+		<input type="submit" value="OK"/>
+	</form>
+
+
+	<ul>
+		<li th:each="cat : ${categories}">
+			<span th:text="${cat.name}">Első kategória</span>
+		</li>
+	
+	</ul>
+
+</body>
+</html>
